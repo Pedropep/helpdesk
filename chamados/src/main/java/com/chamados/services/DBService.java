@@ -3,7 +3,6 @@ package com.chamados.services;
 import java.util.Arrays;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import com.chamados.domain.Chamado;
