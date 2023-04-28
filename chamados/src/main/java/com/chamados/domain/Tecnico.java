@@ -3,6 +3,8 @@ package com.chamados.domain;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.chamados.enums.Perfil;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 
@@ -15,10 +17,12 @@ public class Tecnico extends Pessoa {
 
 	public Tecnico() {
 		super();
+		addPerfis(Perfil.CLIENTE);
 	}
 
 	public Tecnico(Integer id, String nome, String cpf, String email, String senha) {
 		super(id, nome, cpf, email, senha);
+		addPerfis(Perfil.CLIENTE);
 	}
 
 	public List<Chamado> getChamados() {
